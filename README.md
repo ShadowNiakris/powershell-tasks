@@ -1,4 +1,4 @@
-# DevOps Essentials: Final task 1 (PS)
+# DevOps Essentials: Powershell Task 2
 
 > **Please use branch `task2` for this task that already exist in your forked repository after you has been started task**
 
