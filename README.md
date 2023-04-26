@@ -27,7 +27,7 @@ accounts.csv and below.
 
 4) Path to accounts.csv file should be as argument to the script.
 
-5) Result file accounts_new.csv should be created in the same directory where accounts.csv file is located
+5) Result file accounts_new.csv should be created in the same directory where accounts.csv file is located (**NOTE:** it can be different than current folder)
 
 ## Definition of done.
 
