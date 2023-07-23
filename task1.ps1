@@ -29,7 +29,7 @@ param(
 
     #main part: bitwise comparison
     for ($i=0; $i -le 3; $i+=1){
-        if (([int]$ip1[$i] -band [int]$mask[$i]) -ne ([int]$ip2[$i] -band [int]$mask[$i]))
+        if (([Convert]::ToInt32($ip1[$i],2) -band [Convert]::ToInt32($mask[$i],2)) -ne ([Convert]::ToInt32($ip2[$i],2) -band [Convert]::ToInt32($mask[$i],2)))
         {
             Write-Host "no"
           return
