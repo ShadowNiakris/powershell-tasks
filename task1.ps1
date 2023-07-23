@@ -1,4 +1,3 @@
-function test-ipaddress{   
 
 param(
     [Parameter(Mandatory=$true)]
@@ -36,5 +35,5 @@ param(
         }
     }
     Write-Host "yes"
-}
+
 
