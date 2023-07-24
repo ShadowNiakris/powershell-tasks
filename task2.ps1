@@ -18,7 +18,7 @@
         $newLine = [PSCustomObject]@{
             id = $line.id
             location_id=$line.location_id
-            Name = $TextInfo.ToTitleCase($line.name)
+            name = $TextInfo.ToTitleCase($line.name)
             title=$line.title
             email = $email
             department=$line.department
@@ -33,4 +33,4 @@
     }
 
     $path = "$((Get-ChildItem $CsvFile).Directory)\accounts_new.csv"
-     $accounts_new |Export-Csv -Path $path -NoTypeInformation -Delimiter ','
+     $accounts_new |Export-Csv -Path $path -NoTypeInformation -Delimiter ',' -Encoding UTF8
