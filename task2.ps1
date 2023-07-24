@@ -27,8 +27,12 @@
     }
 
     foreach($line in $accounts_new){
-        if (($emails -match $line.email) -gt 1){
+        if (($emails -match $line.email).count -gt 1){
             $line.email += $line.location_id+'@abc.com'
+        }
+        else
+        {
+            $line.email += '@abc.com'
         }
     }
 
